@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 body{
     width: 100%;
@@ -55,7 +55,7 @@ nav{
     width: 80%;
     margin: 30px auto;
 }
-div.logo > img, div.hamburger > img{
+a.logo > img, div.hamburger > img{
     width: 100%;
     height: auto;
 }

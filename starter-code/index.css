@@ -13,3 +13,37 @@ body{
         background-image: url('./assets/home/background-home-desktop.jpg');
     }  
 }
+
+main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+div.intro{
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+div.intro > div{
+    width: 100%;
+}
+div.intro_heading{
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+div.explore{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+div.intro > div:not(:nth-child(2)){
+    opacity: 80%;
+}
