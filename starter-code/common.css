@@ -29,6 +29,10 @@ a.main_link{
     color: #fff;
     padding: 0 10px;
 }
+a.main_link:hover{
+    border-bottom: 2px solid #fff;
+
+}
 a.main_link:not(:first-child){
     margin-left: 15px;
 }
