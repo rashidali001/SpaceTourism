@@ -2,6 +2,7 @@ body{
     background-image: url('./assets/home/background-home-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 @media (min-width: 500px) {
     body{
@@ -20,10 +21,43 @@ main{
     display: flex;
     flex-direction: column;
 }
+@media (min-width: 800px)
+{
+    main{
+        width: 90% !important;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between !important;
+    }
+    main > div{
+        width: 38%;
+    }
+    div.intro{
+        width: 38%;
+    }
+    div.intro_heading{
+        font-size: 100px !important;
+    }
+}
+@media (min-width: 900) {
+    div.intro, main > div{
+        width: 45%;
+    }
+    
+}
+@media (min-width: 550px){
+    main{
+        width: 60%;
+    }
+}
 div.intro{
     color: #fff;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 div.intro > div{
     width: 100%;
@@ -36,7 +70,7 @@ div.intro_heading{
 div.explore{
     width: 200px;
     height: 200px;
-    margin: 50px auto;
+    margin: 30px auto;
     background-color: #fff;
     border-radius:50%;
     display: flex;
@@ -47,3 +81,10 @@ div.explore{
 div.intro > div:not(:nth-child(2)){
     opacity: 80%;
 }
+div.intro > div:first-child{
+    font-size: 20px;
+}
+div.intro > div:last-child{
+    line-height: 25px;
+}
+
