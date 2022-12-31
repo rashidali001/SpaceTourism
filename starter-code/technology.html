@@ -10,6 +10,50 @@
 </head>
 <body>
 
+  <nav>
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <!--Appears on tablet and desktop versions-->
+    <div class="links">
+      <div class="line">
+
+      </div>
+    </div>
+
+    <div class="icon-hamburger" onclick="openNav()"> 
+      <img src="./assets/shared/icon-hamburger.svg" alt="hamburger menu">
+    </div>
+  </nav>
+  <!-- Nav Overlay-->
+
+  <div class="overlay">
+    <div class="overlay_container">
+      <a class="overlay_link" href="./index.html">
+        <span>00</span>
+        <span>HOME</span>
+      </a>
+      <a class="overlay_link" href="./destination.html">
+        <span>01</span>
+        <span>DESTINATION</span>
+      </a>
+      <a class="overlay_link" href="./crew.html">
+        <span>02</span>
+        <span>CREW</span>
+      </a>
+      <a class="overlay_link" href="./technology.html">
+        <span>03</span>
+        <span>TECHNOLOGY</span>
+      </a>
+    </div>
+    <div class="close" onclick="closeNav()">
+      <img src="./assets/shared/icon-close.svg" alt="close">
+    </div>
+  </div>
+
+  <!--End-->
+
+  <script src="./scripts/script.js"></script>
 
 </body>
 </html>
