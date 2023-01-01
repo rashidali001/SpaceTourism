@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -22,7 +25,7 @@ div.links{
 }
 a.main_link{
     display: inline-flex;
-    height: 80px;
+    height: 70px;
     align-items: center;
     text-decoration: none;
     color: #fff;
@@ -42,8 +45,8 @@ div.line{
     display: none;
     position: absolute;
     width: 160px;
-    height: 1px;
-    border: 1px solid #fff;
+    height: 0.25px;
+    border: 0.25px solid #fff;
     top: 50%;
     left: -150px;
 }

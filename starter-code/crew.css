@@ -73,6 +73,7 @@ div.crew_name{
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
+        margin-top: 50px;
     }
     div.crew_img_container{
         width: 25%;
