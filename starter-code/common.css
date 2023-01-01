@@ -27,10 +27,10 @@ a.main_link{
     text-decoration: none;
     color: #fff;
     padding: 0 10px;
+    border-bottom: 2px solid transparent;
 }
 a.main_link:hover{
     border-bottom: 2px solid #fff;
-
 }
 a.main_link:not(:first-child){
     margin-left: 15px;
@@ -151,4 +151,23 @@ a.overlay_link > span{
         width: 350px;
         left: -340px;
     }
+}
+
+/** heading common style **/
+div.heading{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    color: #ccc;
+}
+div.heading > span{
+    margin-right: 10px;
+    color: #fff;
+    font-weight: 700 !important;
+}
+@media (min-width: 900px) {
+    div.heading{
+        text-align: left;
+    }
+    
 }
