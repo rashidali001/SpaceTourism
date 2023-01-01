@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 100vh!important;
 }
 @media (min-width: 500px) {
     body{
