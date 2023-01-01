@@ -2,7 +2,7 @@ body{
     background-image: url('./assets/crew/background-crew-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 @media (min-width: 500px) {
     body{
@@ -36,10 +36,71 @@ div.courasel{
     margin: 30px auto;
     justify-content: space-between;
 }
+div.courasel_copy{
+    display: none;
+}
 div.courasel > div{
     width: 15px;
     height: 15px;
     padding: 5px;
     border-radius: 50%;
     border: 1px solid #ccc;
+}
+div.active{
+    background-color: #fff !important;
+}
+
+div.crew_info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+div.crew_career{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+div.crew_name{
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+@media (min-width: 800px) {
+    body{
+        height: 100vh;
+    }
+    div.crew{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.crew_img_container{
+        width: 25%;
+    }
+    div.crew_info{
+        width: 50%;
+    }
+    img.crew_img{
+        height: 350px;
+    }
+    div.courasel{
+        display: none;
+    }
+    div.courasel_copy{
+        display: flex;
+        width: 50%;
+        margin: 30px 0;
+        justify-content: flex-start;
+    }
+    div.courasel_copy > div{
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+    }
+    div.courasel_copy > div:not(:first-child)
+    {
+        margin-left: 15px;
+    }
 }
