@@ -98,3 +98,6 @@ div.tech_heading{
         margin: 20px 0;
     }
 }
+div.active{
+    background-color: #fff;
+}
