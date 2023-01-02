@@ -15,6 +15,7 @@ let planet_description_no = 0;
 let distance_no = 0;
 let time_no = 0;
 
+
 displayImg();
 displayheading();
 displayInfo();
@@ -92,8 +93,8 @@ for (let i = 0; i < destination.length; i++)
     planet_links.appendChild(planet_link);
     planet_link.classList.add('planet_link');
     planet_link.onclick = change;
+    
 }
-
 
 function change()
 {
