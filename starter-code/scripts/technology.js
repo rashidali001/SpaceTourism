@@ -25,4 +25,10 @@ function change_pic()
     tech_img.src = technology_array[this.id].images.portrait;
     tech_heading.innerHTML = technology_array[this.id].name;
     tech_description.innerHTML = technology_array[this.id].description;
+    for ( let i = 0; i < tech_change.length; i++)
+    {
+         tech_change[i].classList.remove('active');
+    }
+    tech_change[this.id].classList.add('active');
+
 }
