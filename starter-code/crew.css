@@ -49,6 +49,9 @@ div.courasel > div{
 div.active{
     background-color: #fff !important;
 }
+div.change{
+    cursor: pointer;
+}
 
 div.crew_info{
     margin-top: 20px;
@@ -93,7 +96,7 @@ div.crew_name{
         margin: 30px 0;
         justify-content: flex-start;
     }
-    div.courasel_copy > div{
+    div.change{
         width: 15px;
         height: 15px;
         padding: 5px;

@@ -2,6 +2,7 @@ body{
     background-image: url('./assets/technology/background-technology-mobile.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
 }
 @media (min-width: 500px) {
     body{
@@ -12,4 +13,88 @@ body{
     body{
         background-image: url('./assets/technology/background-technology-desktop.jpg');
     }  
+}
+div.technology{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 800px){
+    div.technology{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    div.vehicle{
+        width: 45%;
+    }
+    div.tech_info{
+        width: 45%;
+    }
+    div.heading{
+        text-align: left;
+    }
+    div.tech_info{
+        flex-direction: row;
+    }
+}
+img.tech_img{
+    width: 100%;
+    height: auto;
+}
+div.tech_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.tech_count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 10px auto;
+}
+div.tech_count > div
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+div.tech_count > div:hover{
+    background-color: #fff;
+    color: #000;
+}
+div.tech_content{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+div.tech_heading{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+@media (min-width: 800px){
+    div.tech_info{
+        flex-direction: row;
+    }
+    div.tech_count{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    div.tech_change{
+        margin: 20px 0;
+    }
 }
