@@ -24,5 +24,5 @@ function change_pic()
 {
     tech_img.src = technology_array[this.id].images.portrait;
     tech_heading.innerHTML = technology_array[this.id].name;
-    tech_description.innerHTML = technology_array[this.id].description
+    tech_description.innerHTML = technology_array[this.id].description;
 }
