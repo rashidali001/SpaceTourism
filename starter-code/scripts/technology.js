@@ -14,6 +14,7 @@ let start = 0;
 tech_img.src = technology_array[start].images.portrait;
 tech_heading.innerHTML = technology_array[start].name;
 tech_description.innerHTML = technology_array[start].description;
+tech_change[start].classList.add('active');
 
 for ( let i = 0; i < tech_change.length; i++)
 {
